@@ -32,12 +32,12 @@ Tag.belongsToMany(Product, {
   onDelete: 'CASCADE'
 });
 
-sequelize.sync().then(() => {
-  console.log('Tables have been synced')
-})
-.catch((err) => {
-  console.log('error syncing database', err)
-});
+// sequelize.sync().then(() => {
+//   console.log('Tables have been synced')
+// })
+// .catch((err) => {
+//   console.log('error syncing database', err)
+// });
 
 module.exports = {Product, Category, Tag, ProductTag,
 };
